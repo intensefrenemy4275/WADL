@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Summary</title>
+  <link rel="stylesheet" href="styles.css">  
+</head>
+<body>
+  <div class="container">
+    <h1>Registration Summary</h1>
+    <div id="summary">
+      <p><strong>Name:</strong> <span id="nameSummary"></span></p>
+      <p><strong>Email ID:</strong> <span id="emailSummary"></span></p>
+      <p><strong>Mobile No.:</strong> <span id="mobileSummary"></span></p>
+      <p><strong>Address:</strong> <span id="addressSummary"></span></p>
+      <p><strong>City:</strong> <span id="citySummary"></span></p>
+      <p><strong>Hobbies:</strong> <span id="hobbiesSummary"></span></p>
+      <p><strong>Gender:</strong> <span id="genderSummary"></span></p>
+    </div>
+    <a href="index.html">Go Back</a>
+  </div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+
+    document.getElementById('nameSummary').textContent = urlParams.get('name');
+    document.getElementById('emailSummary').textContent = urlParams.get('email');
+    document.getElementById('mobileSummary').textContent = urlParams.get('mobile');
+    document.getElementById('addressSummary').textContent = urlParams.get('address');
+    document.getElementById('citySummary').textContent = urlParams.get('city');
+    document.getElementById('genderSummary').textContent = urlParams.get('gender');
+
+    const hobbies = urlParams.getAll('hobbies');
+    document.getElementById('hobbiesSummary').textContent = hobbies.join(', ');
+  </script>
+</body>
+</html>

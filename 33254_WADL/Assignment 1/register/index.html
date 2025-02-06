@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="styles.css">  
+  <script src="script.js" defer></script>   
+</head>
+<body>
+  <div class="container">
+    <h1>Registration Form</h1>
+    <form id="registerForm" action="summary.html" method="GET" onsubmit="return validateForm()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email ID:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="mobile">Mobile No.:</label>
+      <input type="text" id="mobile" name="mobile" required pattern="\d{10}" title="Please enter a valid 10-digit mobile number">
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="4" required></textarea>
+
+      <label for="city">City:</label>
+      <select id="city" name="city" required>
+        <option value="Pune">Pune</option>
+        <option value="Bangalore">Bangalore</option>
+        <option value="Delhi">Delhi</option>
+      </select>
+
+      <label>Hobbies:</label>
+      <label>
+        <input type="checkbox" name="hobbies" value="Gaming"> Gaming
+      </label>
+      <label>
+        <input type="checkbox" name="hobbies" value="Playing Guitar"> Playing Guitar
+      </label>
+      <label>
+        <input type="checkbox" name="hobbies" value="Drummer"> Drummer
+      </label>
+
+      <label>Gender:</label>
+      <label>
+        <input type="radio" name="gender" value="Male" required> Male
+      </label>
+      <label>
+        <input type="radio" name="gender" value="Female" required> Female
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
