@@ -1,0 +1,36 @@
+/* Custom styles for the mobile website */
+.ui-page {
+    background-color: #f8f8f8;
+}
+
+.ui-header {
+    background-color: #4a4a4a;
+    color: white;
+}
+
+.ui-footer {
+    background-color: #4a4a4a;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.ui-content {
+    padding: 15px;
+}
+
+/* Add some spacing to form elements */
+form {
+    margin-bottom: 20px;
+}
+
+/* Style for the collapsible elements */
+.ui-collapsible {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Custom list styling */
+.ui-listview {
+    margin-top: 15px;
+}

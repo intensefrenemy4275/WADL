@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Mobile Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Include jQuery -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Home Page -->
+    <div data-role="page" id="home">
+        <div data-role="header">
+            <h1>My Mobile Website</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" class="ui-btn-active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div role="main" class="ui-content">
+            <h2>Welcome to My Mobile Website</h2>
+            <p>This is a simple mobile website created using jQuery Mobile.</p>
+            <div data-role="collapsible">
+                <h3>Learn More</h3>
+                <p>jQuery Mobile is a touch-optimized HTML5 UI framework designed to make responsive websites and apps that are accessible on all smartphone, tablet and desktop devices.</p>
+            </div>
+            <a href="#about" class="ui-btn ui-corner-all">Go to About Page</a>
+        </div>
+
+        <div data-role="footer">
+            <h4>&copy; 2023 My Mobile Website</h4>
+        </div>
+    </div>
+
+    <!-- About Page -->
+    <div data-role="page" id="about">
+        <div data-role="header">
+            <h1>About Us</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about" class="ui-btn-active">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div role="main" class="ui-content">
+            <h2>About Our Company</h2>
+            <p>We are a fictional company created for this demo.</p>
+            <ul data-role="listview" data-inset="true">
+                <li data-role="list-divider">Our Team</li>
+                <li><a href="#">John Doe - CEO</a></li>
+                <li><a href="#">Jane Smith - CTO</a></li>
+                <li><a href="#">Bob Johnson - Designer</a></li>
+            </ul>
+        </div>
+
+        <div data-role="footer">
+            <h4>&copy; 2023 My Mobile Website</h4>
+        </div>
+    </div>
+
+    <!-- Contact Page -->
+    <div data-role="page" id="contact">
+        <div data-role="header">
+            <h1>Contact Us</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact" class="ui-btn-active">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div role="main" class="ui-content">
+            <h2>Get in Touch</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+                
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+                
+                <label for="message">Message:</label>
+                <textarea name="message" id="message"></textarea>
+                
+                <input type="submit" value="Send Message" data-theme="b">
+            </form>
+            
+            <div data-role="collapsible">
+                <h3>Our Address</h3>
+                <p>123 Mobile Street<br>
+                Web City, Internet 12345<br>
+                Phone: (123) 456-7890</p>
+            </div>
+        </div>
+
+        <div data-role="footer">
+            <h4>&copy; 2023 My Mobile Website</h4>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
